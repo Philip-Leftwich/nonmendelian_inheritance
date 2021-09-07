@@ -1,6 +1,6 @@
 ---
 title: "ATS 1054 Presentation"
-subtitle: "Partial dominance, co-dominance and epistasis"  
+subtitle: "Non-Mendelian inheritance"  
 author: 
   - "Philip Leftwich"
 date: "10th September 2021"
@@ -41,8 +41,10 @@ style_duo_accent(
 class: center, middle
 
 This session will be recorded for you to playback at any time, 
-all slides are available on my GitHub profile, 
-diagrams and images are accompanied with alt-text
+all slides are publically available on my [GitHub page](https://github.com/Philip-Leftwich/nonmendelian_inheritance).
+
+
+All diagrams and images are accompanied with alt-text.
 
 
 ---
@@ -84,7 +86,7 @@ There are two ways to engage today:
 ## Learning Outcomes
 
 
-1.  You will be able to understand when crosses don't conform to Mendelian Inheritance
+1.  You will be able to understand when crosses `don't` conform to Mendelian Inheritance
 
 --
 
@@ -99,7 +101,7 @@ There are two ways to engage today:
 
 # Mendelian Inheritance
 
-** `a quick` recap**
+** a quick `recap`**
 
 1. `Law of dominance & uniformity`
 
@@ -110,7 +112,7 @@ There are two ways to engage today:
 
 # Mendelian Inheritance
 
-** `a quick` recap**
+** a quick `recap`**
 
 1. `Law of dominance & uniformity`
 
@@ -122,7 +124,7 @@ There are two ways to engage today:
 
 # Mendelian Inheritance
 
-** `a quick` recap**
+** a quick `recap`**
 
 1. `Law of dominance & uniformity`
 
@@ -136,35 +138,35 @@ Genes of different traits sort independently.
 ---
 class: center
 
-# A `Dihybrid` cross
+# `Recap:` A Dihybrid cross
 
-![](images/Slide1.png)
+![](images/Slide1.png) ![](images/pea_key.png)
 
 ---
 class: center
 
-# A `Dihybrid` cross
+# `Recap:` A Dihybrid cross
 
 ![](images/Slide2.png)
 
 ---
 class: center
 
-# A `Dihybrid` cross
+# `Recap:` A Dihybrid cross
 
 ![](images/Slide3.png)
 
 ---
 class: center
 
-# A `Dihybrid` cross
+# `Recap:` A Dihybrid cross
 
 ![](images/Slide4.png)
 
 ---
 class: center
 
-# A `Dihybrid` cross
+# `Recap:` A Dihybrid cross
 
 ![](images/Slide5.png)
 
@@ -182,7 +184,7 @@ class: inverse, center, middle,
 
 Something
 
-<img src="images/incomplete.png" alt="something"  style="width: 60%" />
+<img src="images/incomplete.png" alt="something"  style="width: 80%" /> 
 
 ---
 
@@ -190,7 +192,7 @@ Something
 
 Something
 
-<img src="images/codominance.png" alt="something"  style="width: 60%" />
+<img src="images/codominance.png" alt="something"  style="width: 80%" />
 
 ---
 class: middle, center, inverse
@@ -199,6 +201,8 @@ class: middle, center, inverse
 # Question Time!
 
 ### [slido.com](slido.com)
+
+
 
 ### 733 633
 
@@ -208,27 +212,25 @@ class: middle, center, inverse
 
 Sometimes more than one gene is needed to produce a phenotype
 
-<img src="images/pathway.png" alt="something"  style="width: 60%" />
+<img src="images/pathway.png" alt="something"  style="width: 50%" />
 
 ---
 
 ## 3. Epistasis
 
-<img src="images/epistasis.png" alt="something"  style="width: 60%" />
+<img src="images/epistasis.png" alt="something"  style="width: 90%" />
 
 --
 
-.footnote[Homozygotes for *Fut1*<sup>h</sup> always have an O blood phenotype]
+.footnote[Homozygotes for *fut1*<sup>h</sup> always have an O blood phenotype]
 
 ---
-class: middle, center, inverse
+class: middle, center
 
 ## ☁📊☁
-# Question Time!
+### Question Time! [slido.com](slido.com) # 733 633
 
-### [slido.com](slido.com)
-
-### 733 633
+<img src="images/final_3.png" alt="something" style="width: 90%" />
 
 ---
 
