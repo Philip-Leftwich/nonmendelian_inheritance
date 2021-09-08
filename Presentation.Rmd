@@ -1,6 +1,6 @@
 ---
 title: "ATS 1054 Presentation"
-subtitle: "Non-Mendelian inheritance"  
+subtitle: "Non-Mendelian Inheritance"  
 author: 
   - "Philip Leftwich"
 date: "10th September 2021"
@@ -86,15 +86,15 @@ There are two ways to engage today:
 ## Learning Outcomes
 
 
-1.  You will be able to understand when crosses `don't` conform to Mendelian Inheritance
+1.  You will be able to `understand` when crosses `don't` conform to Mendelian Inheritance
 
 --
 
-2.  You will be able to analyze monohybrid crosses for incomplete dominance & co-dominance
+2.  You will be able to `analyze` genetic crosses for incomplete dominance & co-dominance
 
 --
 
-3.  You will be able to describe complex patterns of inheritance involving epistasis
+3.  You will be able to `describe` gene interaction and complex patterns of inheritance produced by epistasis
 
 ---
 
@@ -175,14 +175,14 @@ class: inverse, center, middle,
 
 ## 🧬 Examples of `Non`-Mendelian Inheritance 🧬
 
-.footnote[How do we interpret patterns of inheritance that seem to defy our understanding of the 'rules' of inheritance???]
+.footnote[How do we interpret patterns of inheritance that seem to defy one or more of the 'rules' of inheritance???]
 
 ---
 
 
 ## 1. `Partial` Dominance
 
-Something
+Neither allele is dominant & heterozygotes have an `intermediate` phenotype.
 
 <img src="images/incomplete.png" alt="something"  style="width: 80%" /> 
 
@@ -190,7 +190,7 @@ Something
 
 ## 2. `Co`dominance
 
-Something
+Both alleles produce distinct, detectable gene products that are expressed `equally` in heterozygotes. 
 
 <img src="images/codominance.png" alt="something"  style="width: 80%" />
 
@@ -210,7 +210,7 @@ class: middle, center, inverse
 
 ## 3. Epistasis
 
-Sometimes more than one gene is needed to produce a phenotype
+`Gene interactions` - sometimes more than one gene is needed to produce a phenotype.
 
 <img src="images/pathway.png" alt="something"  style="width: 50%" />
 
@@ -218,7 +218,9 @@ Sometimes more than one gene is needed to produce a phenotype
 
 ## 3. Epistasis
 
-<img src="images/epistasis.png" alt="something"  style="width: 90%" />
+The genotype of one gene `masks or modifies` the effect of another gene.
+
+<img src="images/epistasis.png" alt="something"  style="width: 80%" />
 
 --
 
@@ -283,42 +285,4 @@ class: center, middle
 
 Web [https://philip-leftwich.github.io/](https://philip-leftwich.github.io/)
 
----
-
-# Mendelian Inheritance
-
-** `a quick` recap**
-
-1. `Law of dominance & uniformity`: some alleles are dominant, while others are recessive.
-
---
-
-2. `Law of segregation`: Gametes only carry one allele for each gene. 
-
---
-3. `Law of independent assortment`: Genes of different traits sort independently. 
-
-.pull-right[
-
-<img src="images/ezgif.com-gif-maker.gif" alt="Cartoon gif of Mendel waving by his peas"  style="width: 60%" />
-
-Mendel & his peas
-
-]
-
----
-
-# `Non`-Mendelian Inheritance
-
-1. `Partial` Dominance
-
---
-
-2. `Co`dominance
-
---
-
-3. Epistasis
-
----
 
