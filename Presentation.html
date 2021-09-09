@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="author" content="Philip Leftwich" />
     <script src="libs/header-attrs/header-attrs.js"></script>
+    <script src="libs/kePrint/kePrint.js"></script>
+    <link href="libs/lightable/lightable.css" rel="stylesheet" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -27,7 +29,9 @@ class: center, middle, inverse, title-slide
 class: center, middle
 
 This session will be recorded for you to playback at any time, 
-all slides are publically available on my [GitHub page](https://github.com/Philip-Leftwich/nonmendelian_inheritance).
+all slides are publically available on my GitHub page:
+
+[Philip-Leftwich/nonmendelian_inheritance](https://github.com/Philip-Leftwich/nonmendelian_inheritance).
 
 
 All diagrams and images are accompanied with alt-text.
@@ -72,7 +76,7 @@ There are two ways to engage today:
 ## Learning Outcomes
 
 
-1.  You will be able to `understand` when crosses `don't` conform to Mendelian Inheritance
+1.  You will be able to `understand` why some crosses `don't` conform to Mendelian Inheritance
 
 --
 
@@ -80,7 +84,7 @@ There are two ways to engage today:
 
 --
 
-3.  You will be able to `describe` gene interaction and complex patterns of inheritance produced by epistasis
+3.  You will be able to `describe` gene interaction and `analyze` complex patterns of inheritance produced by epistasis
 
 ---
 
@@ -89,9 +93,9 @@ There are two ways to engage today:
 
 ** a quick `recap`**
 
-1. `Law of dominance &amp; uniformity`
+1. `Law of dominance`
 
-&lt;img src="images/dominance.png" alt="something"  style="width: 60%" /&gt;
+&lt;img src="images/dominance.png" alt="Heterozygote shows dominant phenotype, recessive phenotype only visible in homozygotes"  style="width: 60%" /&gt;
 
 
 ---
@@ -100,11 +104,11 @@ There are two ways to engage today:
 
 ** a quick `recap`**
 
-1. `Law of dominance &amp; uniformity`
+1. `Law of dominance`
 
 2. `Law of segregation` 
 
-&lt;img src="images/segregation.png" alt="something"  style="width: 60%" /&gt;
+&lt;img src="images/segregation.png" alt="Diploid alleles separating in equal proportions into different gametes"  style="width: 60%" /&gt;
 
 ---
 
@@ -112,7 +116,7 @@ There are two ways to engage today:
 
 ** a quick `recap`**
 
-1. `Law of dominance &amp; uniformity`
+1. `Law of dominance`
 
 2. `Law of segregation`
 
@@ -122,46 +126,96 @@ Genes of different traits sort independently.
 
 
 ---
-class: center
 
-# `Recap:` A Dihybrid cross
+# A Dihybrid cross
+** `peas` check out my Punnett square**
 
-![](images/Slide1.png) ![](images/pea_key.png)
-
----
-class: center
-
-# `Recap:` A Dihybrid cross
-
-![](images/Slide2.png)
+![Analysis of a dihybrid cross shows heterozygous plants are self-fertilised to produce an F2 generation with a 9:3:3:1 ratio](images/Slide1.png) 
 
 ---
-class: center
 
-# `Recap:` A Dihybrid cross
+# A Dihybrid cross
+** `peas` check out my Punnett square**
 
-![](images/Slide3.png)
+![Analysis of a dihybrid cross shows heterozygous plants are self-fertilised to produce an F2 generation with a 9:3:3:1 ratio](images/Slide2.png)
 
----
-class: center
-
-# `Recap:` A Dihybrid cross
-
-![](images/Slide4.png)
 
 ---
-class: center
 
-# `Recap:` A Dihybrid cross
+# A Dihybrid cross
+** `peas` check out my Punnett square**
 
-![](images/Slide5.png)
+![Analysis of a dihybrid cross shows heterozygous plants are self-fertilised to produce an F2 generation with a 9:3:3:1 ratio](images/Slide3.png)
 
 ---
+
+# A Dihybrid cross
+** `peas` check out my Punnett square**
+
+![Analysis of a dihybrid cross shows heterozygous plants are self-fertilised to produce an F2 generation with a 9:3:3:1 ratio](images/Slide4.png)
+
+---
+
+# A Dihybrid cross
+** `peas` check out my Punnett square**
+
+![Analysis of a dihybrid cross shows heterozygous plants are self-fertilised to produce an F2 generation with a 9:3:3:1 ratio](images/Slide5.png)
+
+---
+
+
+# A Dihybrid cross
+
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;F1 yellow, round x yellow, round&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; F2 &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Of all offspring &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Of all offspring &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Combined probabilities &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;html&gt;&lt;body&gt;&lt;img src="images/arrow.png" width="16" height="16"&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3/4 are round &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; (3/4)(3/4)=9/16 yellow, round &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3/4 are yellow &lt;html&gt;&lt;body&gt;&lt;img src="images/blank.png" width="16" height="16"&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1/4 are wrinkled &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; (3/4)(1/4)=3/16 yellow, wrinkled &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;html&gt;&lt;body&gt;&lt;img src="images/arrow.png" width="16" height="16"&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3/4 are round &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; (1/4)(3/4)=3/16 green, round &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1/4 are yellow &lt;html&gt;&lt;body&gt;&lt;img src="images/blank.png" width="16" height="16"&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1/4 are wrinkled &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; (1/4)(1/4)=3/16 green, wrinkled &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
 class: inverse, center, middle, 
 
 ## 🧬 Examples of `Non`-Mendelian Inheritance 🧬
 
-.footnote[How do we interpret patterns of inheritance that seem to defy one or more of the 'rules' of inheritance???]
+.footnote[How do we interpret patterns of inheritance that seem to defy one or more of Mendel's Laws???]
 
 ---
 
@@ -170,7 +224,15 @@ class: inverse, center, middle,
 
 Neither allele is dominant &amp; heterozygotes have an `intermediate` phenotype.
 
-&lt;img src="images/incomplete.png" alt="something"  style="width: 80%" /&gt; 
+&lt;img src="images/incomplete.png" alt="Incomplete dominance shown in snapdragon plants, purebreeding red and white flowered plants cross to produce an intermediate pink flowered offspring"  style="width: 80%" /&gt; 
+
+---
+
+## 1. `Partial` Dominance
+
+Partial dominance means the `phenotype` ratio is the **same** as the `genotype` ratio 
+
+&lt;img src="images/cross.png" alt="Inbreeding of heterzygous pink flowers produces offspring in a 1:2:1 ratio of red:pink:white that is the same as the genotypes"  style="width: 50%" /&gt; 
 
 ---
 
@@ -178,7 +240,69 @@ Neither allele is dominant &amp; heterozygotes have an `intermediate` phenotype.
 
 Both alleles produce distinct, detectable gene products that are expressed `equally` in heterozygotes. 
 
-&lt;img src="images/codominance.png" alt="something"  style="width: 80%" /&gt;
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;The MN blood group&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Genotype &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Phenotype &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; MM &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; M &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; MN &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; MN &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; NN &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; N &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+---
+
+## 2. `Co`dominance
+
+Both alleles produce distinct, detectable gene products that are expressed `equally` in heterozygotes. 
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;"&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; MN X MN &lt;html&gt;&lt;body&gt;&lt;img src="images/blank.png" width="16" height="16"&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;html&gt;&lt;body&gt;&lt;img src="images/arrow.png" width="16" height="16"&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 1/4 MM &lt;html&gt;&lt;body&gt;&lt;img src="images/blank.png" width="16" height="16"&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 1/2 MN &lt;html&gt;&lt;body&gt;&lt;img src="images/blank.png" width="16" height="16"&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 1/4 NN &lt;html&gt;&lt;body&gt;&lt;img src="images/blank.png" width="16" height="16"&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+---
+
+## 2. `Co`dominance
+
+Both alleles produce distinct, detectable gene products that are expressed `equally` in heterozygotes. 
+
+&lt;img src="images/codominance.png" alt="something"  style="width: 75%" /&gt;
+
+
+.footnote[*I* stands for isoagglutinogen, a `fancy` term for antigen]
 
 ---
 class: middle, center, inverse
@@ -198,7 +322,28 @@ class: middle, center, inverse
 
 `Gene interactions` - sometimes more than one gene is needed to produce a phenotype.
 
-&lt;img src="images/pathway.png" alt="something"  style="width: 50%" /&gt;
+&lt;img src="images/Slide12.png" alt="the wildtype Fut1 allele directs conversion of a precursor to the H antigen, the IA and IB alleles are then able to convert the H antigen to either A or B allele"  style="width: 70%" /&gt;
+
+---
+## 3. Epistasis
+
+`Gene interactions` - sometimes more than one gene is needed to produce a phenotype.
+
+&lt;img src="images/Slide13.png" alt="the wildtype Fut1 allele directs conversion of a precursor to the H antigen, the IA and IB alleles are then able to convert the H antigen to either A or B allele"  style="width: 70%" /&gt;
+
+---
+## 3. Epistasis
+
+`Gene interactions` - sometimes more than one gene is needed to produce a phenotype.
+
+&lt;img src="images/Slide14.png" alt="the wildtype Fut1 allele directs conversion of a precursor to the H antigen, the IA and IB alleles are then able to convert the H antigen to either A or B allele"  style="width: 70%" /&gt;
+
+---
+## 3. Epistasis
+
+`Gene interactions` - sometimes more than one gene is needed to produce a phenotype.
+
+&lt;img src="images/Slide11.png" alt="the wildtype Fut1 allele directs conversion of a precursor to the H antigen, the IA and IB alleles are then able to convert the H antigen to either A or B allele"  style="width: 70%" /&gt;
 
 ---
 
@@ -206,7 +351,7 @@ class: middle, center, inverse
 
 The genotype of one gene `masks or modifies` the effect of another gene.
 
-&lt;img src="images/epistasis.png" alt="something"  style="width: 80%" /&gt;
+&lt;img src="images/epistasis.png" alt="a punnett square illustrating AA and BB crosses where both parents are heterzygotes for a recessive non-functional FUT1 allele. Offsrping of the type O blood phenotype are produced at a 3:1 ratio"  style="width: 80%" /&gt;
 
 --
 
@@ -217,10 +362,10 @@ class: middle, center
 
 ## ☁📊☁
 ### Question Time! [slido.com](slido.com) # 733 633
-
 &lt;img src="images/final_3.png" alt="something" style="width: 90%" /&gt;
 
 ---
+class: center, middle
 
 # Exit Tickets 🎫
 
@@ -238,6 +383,7 @@ Think 💭 Pair 🧑🏾‍🤝‍🧑🏼 Share 📣
 
 
 ---
+class: center, middle
 
 # Reading 📖
 
@@ -256,7 +402,7 @@ class: center, middle
 
 Complete the quiz on Blackboard to test your knowledge 
 
-Get 100% to earn your `Mendel's Rules` Badge!!!
+Get 100% to earn your `Mendel Rules` Badge!!!
 
 ![Gregor Mendel Badge](images/mendel.png)
 

@@ -35,13 +35,17 @@ style_duo_accent(
   header_font_url = "https://fonts.cdnfonts.com/css/sifonn",
 )
 
+library(kableExtra)
+library(tidyverse)
 ```
 
 
 class: center, middle
 
 This session will be recorded for you to playback at any time, 
-all slides are publically available on my [GitHub page](https://github.com/Philip-Leftwich/nonmendelian_inheritance).
+all slides are publically available on my GitHub page:
+
+[Philip-Leftwich/nonmendelian_inheritance](https://github.com/Philip-Leftwich/nonmendelian_inheritance).
 
 
 All diagrams and images are accompanied with alt-text.
@@ -86,7 +90,7 @@ There are two ways to engage today:
 ## Learning Outcomes
 
 
-1.  You will be able to `understand` when crosses `don't` conform to Mendelian Inheritance
+1.  You will be able to `understand` why some crosses `don't` conform to Mendelian Inheritance
 
 --
 
@@ -94,7 +98,7 @@ There are two ways to engage today:
 
 --
 
-3.  You will be able to `describe` gene interaction and complex patterns of inheritance produced by epistasis
+3.  You will be able to `describe` gene interaction and `analyze` complex patterns of inheritance produced by epistasis
 
 ---
 
@@ -103,9 +107,9 @@ There are two ways to engage today:
 
 ** a quick `recap`**
 
-1. `Law of dominance & uniformity`
+1. `Law of dominance`
 
-<img src="images/dominance.png" alt="something"  style="width: 60%" />
+<img src="images/dominance.png" alt="Heterozygote shows dominant phenotype, recessive phenotype only visible in homozygotes"  style="width: 60%" />
 
 
 ---
@@ -114,11 +118,11 @@ There are two ways to engage today:
 
 ** a quick `recap`**
 
-1. `Law of dominance & uniformity`
+1. `Law of dominance`
 
 2. `Law of segregation` 
 
-<img src="images/segregation.png" alt="something"  style="width: 60%" />
+<img src="images/segregation.png" alt="Diploid alleles separating in equal proportions into different gametes"  style="width: 60%" />
 
 ---
 
@@ -126,7 +130,7 @@ There are two ways to engage today:
 
 ** a quick `recap`**
 
-1. `Law of dominance & uniformity`
+1. `Law of dominance`
 
 2. `Law of segregation`
 
@@ -136,46 +140,69 @@ Genes of different traits sort independently.
 
 
 ---
-class: center
 
-# `Recap:` A Dihybrid cross
+# A Dihybrid cross
+** `peas` check out my Punnett square**
 
-![](images/Slide1.png) ![](images/pea_key.png)
-
----
-class: center
-
-# `Recap:` A Dihybrid cross
-
-![](images/Slide2.png)
+![Analysis of a dihybrid cross shows heterozygous plants are self-fertilised to produce an F2 generation with a 9:3:3:1 ratio](images/Slide1.png) 
 
 ---
-class: center
 
-# `Recap:` A Dihybrid cross
+# A Dihybrid cross
+** `peas` check out my Punnett square**
 
-![](images/Slide3.png)
+![Analysis of a dihybrid cross shows heterozygous plants are self-fertilised to produce an F2 generation with a 9:3:3:1 ratio](images/Slide2.png)
 
----
-class: center
-
-# `Recap:` A Dihybrid cross
-
-![](images/Slide4.png)
 
 ---
-class: center
 
-# `Recap:` A Dihybrid cross
+# A Dihybrid cross
+** `peas` check out my Punnett square**
 
-![](images/Slide5.png)
+![Analysis of a dihybrid cross shows heterozygous plants are self-fertilised to produce an F2 generation with a 9:3:3:1 ratio](images/Slide3.png)
 
 ---
+
+# A Dihybrid cross
+** `peas` check out my Punnett square**
+
+![Analysis of a dihybrid cross shows heterozygous plants are self-fertilised to produce an F2 generation with a 9:3:3:1 ratio](images/Slide4.png)
+
+---
+
+# A Dihybrid cross
+** `peas` check out my Punnett square**
+
+![Analysis of a dihybrid cross shows heterozygous plants are self-fertilised to produce an F2 generation with a 9:3:3:1 ratio](images/Slide5.png)
+
+---
+
+
+# A Dihybrid cross
+
+
+```{r echo=FALSE, warning=FALSE}
+knitr::kable(rbind(
+              c("", "", "3/4 are round","(3/4)(3/4)=9/16 yellow, round" ),
+              c("", "3/4 are yellow", "1/4 are wrinkled","(3/4)(1/4)=3/16 yellow, wrinkled"),
+              c("","", "3/4 are round", "(1/4)(3/4)=3/16 green, round"),
+              c("", "1/4 are yellow", "1/4 are wrinkled","(1/4)(1/4)=3/16 green, wrinkled")
+),
+col.names = c("F2", "Of all offspring", "Of all offspring" , "Combined probabilities"), align="lccc",
+  booktabs = TRUE) %>% 
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>% 
+    add_header_above(c("F1 yellow, round x yellow, round" = 4)) %>% 
+  column_spec(2, image = spec_image(
+    c("images/arrow.png","images/blank.png" , "images/arrow.png","images/blank.png" ), 50, 50))
+```
+
+---
+
 class: inverse, center, middle, 
 
 ## 🧬 Examples of `Non`-Mendelian Inheritance 🧬
 
-.footnote[How do we interpret patterns of inheritance that seem to defy one or more of the 'rules' of inheritance???]
+.footnote[How do we interpret patterns of inheritance that seem to defy one or more of Mendel's Laws???]
 
 ---
 
@@ -184,7 +211,15 @@ class: inverse, center, middle,
 
 Neither allele is dominant & heterozygotes have an `intermediate` phenotype.
 
-<img src="images/incomplete.png" alt="something"  style="width: 80%" /> 
+<img src="images/incomplete.png" alt="Incomplete dominance shown in snapdragon plants, purebreeding red and white flowered plants cross to produce an intermediate pink flowered offspring"  style="width: 80%" /> 
+
+---
+
+## 1. `Partial` Dominance
+
+Partial dominance means the `phenotype` ratio is the **same** as the `genotype` ratio 
+
+<img src="images/cross.png" alt="Inbreeding of heterzygous pink flowers produces offspring in a 1:2:1 ratio of red:pink:white that is the same as the genotypes"  style="width: 50%" /> 
 
 ---
 
@@ -192,7 +227,53 @@ Neither allele is dominant & heterozygotes have an `intermediate` phenotype.
 
 Both alleles produce distinct, detectable gene products that are expressed `equally` in heterozygotes. 
 
-<img src="images/codominance.png" alt="something"  style="width: 80%" />
+```{r echo=FALSE, warning=FALSE}
+library(kableExtra)
+library(tidyverse)
+
+knitr::kable(rbind(
+              c("MM", "M"),
+              c("MN", "MN"),
+              c("NN", "N")
+), format='html',
+col.names = c("Genotype", "Phenotype"), align="lccc",
+  booktabs = TRUE) %>% 
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>% 
+  add_header_above(c("The MN blood group" = 2)) 
+```
+---
+
+## 2. `Co`dominance
+
+Both alleles produce distinct, detectable gene products that are expressed `equally` in heterozygotes. 
+
+```{r echo=FALSE, warning=FALSE}
+
+
+knitr::kable(rbind(
+              c("MN X MN"),
+              c(""),
+              c("1/4 MM"),
+              c("1/2 MN"),
+              c("1/4 NN")
+),
+
+  booktabs = TRUE, align='c') %>% 
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>% 
+  column_spec(1, image = spec_image(
+    c("images/blank.png","images/arrow.png" , "images/blank.png","images/blank.png", "images/blank.png" ), 50, 50))
+
+```
+---
+
+## 2. `Co`dominance
+
+Both alleles produce distinct, detectable gene products that are expressed `equally` in heterozygotes. 
+
+<img src="images/codominance.png" alt="something"  style="width: 75%" />
+
+
+.footnote[*I* stands for isoagglutinogen, a `fancy` term for antigen]
 
 ---
 class: middle, center, inverse
@@ -212,7 +293,28 @@ class: middle, center, inverse
 
 `Gene interactions` - sometimes more than one gene is needed to produce a phenotype.
 
-<img src="images/pathway.png" alt="something"  style="width: 50%" />
+<img src="images/Slide12.png" alt="the wildtype Fut1 allele directs conversion of a precursor to the H antigen, the IA and IB alleles are then able to convert the H antigen to either A or B allele"  style="width: 70%" />
+
+---
+## 3. Epistasis
+
+`Gene interactions` - sometimes more than one gene is needed to produce a phenotype.
+
+<img src="images/Slide13.png" alt="the wildtype Fut1 allele directs conversion of a precursor to the H antigen, the IA and IB alleles are then able to convert the H antigen to either A or B allele"  style="width: 70%" />
+
+---
+## 3. Epistasis
+
+`Gene interactions` - sometimes more than one gene is needed to produce a phenotype.
+
+<img src="images/Slide14.png" alt="the wildtype Fut1 allele directs conversion of a precursor to the H antigen, the IA and IB alleles are then able to convert the H antigen to either A or B allele"  style="width: 70%" />
+
+---
+## 3. Epistasis
+
+`Gene interactions` - sometimes more than one gene is needed to produce a phenotype.
+
+<img src="images/Slide11.png" alt="the wildtype Fut1 allele directs conversion of a precursor to the H antigen, the IA and IB alleles are then able to convert the H antigen to either A or B allele"  style="width: 70%" />
 
 ---
 
@@ -220,7 +322,7 @@ class: middle, center, inverse
 
 The genotype of one gene `masks or modifies` the effect of another gene.
 
-<img src="images/epistasis.png" alt="something"  style="width: 80%" />
+<img src="images/epistasis.png" alt="a punnett square illustrating AA and BB crosses where both parents are heterzygotes for a recessive non-functional FUT1 allele. Offsrping of the type O blood phenotype are produced at a 3:1 ratio"  style="width: 80%" />
 
 --
 
@@ -231,10 +333,10 @@ class: middle, center
 
 ## ☁📊☁
 ### Question Time! [slido.com](slido.com) # 733 633
-
 <img src="images/final_3.png" alt="something" style="width: 90%" />
 
 ---
+class: center, middle
 
 # Exit Tickets 🎫
 
@@ -252,6 +354,7 @@ Think 💭 Pair 🧑🏾‍🤝‍🧑🏼 Share 📣
 
 
 ---
+class: center, middle
 
 # Reading 📖
 
@@ -270,7 +373,7 @@ class: center, middle
 
 Complete the quiz on Blackboard to test your knowledge 
 
-Get 100% to earn your `Mendel's Rules` Badge!!!
+Get 100% to earn your `Mendel Rules` Badge!!!
 
 ![Gregor Mendel Badge](images/mendel.png)
 
